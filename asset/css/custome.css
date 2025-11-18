@@ -1,0 +1,110 @@
+/* Default hide all */
+.logo-mobile {
+    display: none !important;
+    height: 3.5rem;
+}
+
+.logo,
+.white-logo {
+    height: 3.5rem !important;
+}
+
+.teaser-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+/* --- Tablet + Mobile View ----------------------------- */
+@media (max-width: 991px) {
+
+    .logo,
+    .white-logo {
+        display: none !important;
+    }
+
+    .logo-mobile {
+        display: block !important;
+    }
+
+    .teaser-img {
+        display: block;
+        /* ensures visibility */
+        width: 100%;
+    }
+}
+
+
+/* Outer container */
+.scroll-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    padding: 20px 10px;
+}
+
+/* Scrolling content */
+.scroll-content {
+    display: flex;
+    gap: 20px;
+    animation: scroll-left 18s linear infinite;
+}
+
+/* Hero buttons styling */
+.hero-tag-btn {
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Keyframes for infinite scroll */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .scroll-content {
+        animation-duration: 14s;
+    }
+
+    .hero-tag-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .scroll-wrapper {
+        margin-top: 100px;
+    }
+
+    .scroll-content {
+        animation-duration: 10s;
+        gap: 12px;
+    }
+
+    .hero-tag-btn {
+        padding: 6px 16px;
+        font-size: 13px;
+    }
+
+    .teaser-img {
+        display: block;
+        width: 100%;
+    }
+}

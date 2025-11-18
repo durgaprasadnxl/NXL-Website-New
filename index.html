@@ -291,97 +291,7 @@
     <link href="./asset/image/logo.png" rel="apple-touch-icon" />
 
     <!-- Custome CSS -->
-    <style>
-        /* Default hide all */
-        .logo-mobile {
-            display: none !important;
-            height: 3.5rem;
-        }
-
-        .logo,
-        .white-logo {
-            height: 3.5rem !important;
-        }
-
-        /* --- Tablet + Mobile View ----------------------------- */
-        @media (max-width: 991px) {
-
-            .logo,
-            .white-logo {
-                display: none !important;
-            }
-
-            .logo-mobile {
-                display: block !important;
-            }
-        }
-
-
-        /* Outer container */
-        .scroll-wrapper {
-            overflow: hidden;
-            width: 100%;
-            position: relative;
-            white-space: nowrap;
-            padding: 20px 10px;
-        }
-
-        /* Scrolling content */
-        .scroll-content {
-            display: flex;
-            gap: 20px;
-            animation: scroll-left 18s linear infinite;
-        }
-
-        /* Hero buttons styling */
-        .hero-tag-btn {
-            color: #fff;
-            padding: 10px 25px;
-            border-radius: 30px;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
-
-        /* Keyframes for infinite scroll */
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        /* Tablet */
-        @media (max-width: 991px) {
-            .scroll-content {
-                animation-duration: 14s;
-            }
-
-            .hero-tag-btn {
-                padding: 8px 20px;
-                font-size: 14px;
-            }
-        }
-
-        /* Mobile */
-        @media (max-width: 767px) {
-            .scroll-wrapper {
-                margin-top: 100px;
-            }
-
-            .scroll-content {
-                animation-duration: 10s;
-                gap: 12px;
-            }
-
-            .hero-tag-btn {
-                padding: 6px 16px;
-                font-size: 13px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./asset/css/custome.css">
 
 </head>
 
@@ -399,16 +309,16 @@
                             </div>
                             <div class="call-wrap">
                                 <a href="tel:+917736960069" class="call">Contact Us</a>
-                                <div class="available-text-wrap">
+                                <!-- <div class="available-text-wrap">
                                     <img src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/6880882d5bf95b88c0110b7a_Ellipse-198.svg"
                                         loading="lazy" alt="Crcile" class="ellipse-198" />
                                     <div class="available-text">Available now</div>
-                                </div>
+                                </div> -->
                             </div>
 
                         </div>
                     </div>
-                    <a href="/" aria-current="page" class="navbar-brand w-nav-brand w--current">
+                    <a href="./" aria-current="page" class="navbar-brand w-nav-brand w--current">
                         <img loading="lazy" src="./asset/image/logo-blk.png" alt="logo-stryker-small" class="logo" />
                         <img loading="lazy" src="./asset/image/nxllogo.png" alt="white-logo" class="white-logo" />
                         <img src="./asset/image/logo.png" alt="logo" class="logo-mobile">
@@ -432,13 +342,13 @@
                 <div class="global-menu__wrap">
                     <a data-w-id="82e03af0-d35e-3942-652a-dc207ce4cabb" href="/" aria-current="page"
                         class="global-menu__item w--current">Home</a>
-                    <a data-w-id="ed2634f6-cce7-948e-48e3-77834c890035" href="https://nexostudio.webflow.io/#Portfolio"
+                    <a data-w-id="ed2634f6-cce7-948e-48e3-77834c890035" href="#Portfolio"
                         class="global-menu__item">About Us</a>
-                    <a data-w-id="82e03af0-d35e-3942-652a-dc207ce4cabd" href="https://nexostudio.webflow.io/#Services"
+                    <a data-w-id="82e03af0-d35e-3942-652a-dc207ce4cabd" href="#Services"
                         class="global-menu__item">Service</a>
-                    <a data-w-id="82e03af0-d35e-3942-652a-dc207ce4cac1" href="/blog"
+                    <a data-w-id="82e03af0-d35e-3942-652a-dc207ce4cac1" href="#"
                         class="global-menu__item">Careers</a>
-                    <a data-w-id="82e03af0-d35e-3942-652a-dc207ce4cabf" href="/contact"
+                    <a data-w-id="82e03af0-d35e-3942-652a-dc207ce4cabf" href="./contact.html"
                         class="global-menu__item">Contact Us</a>
                 </div>
                 <div class="global-menu-shap-left"></div>
@@ -789,8 +699,8 @@
                                                 <img src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/68aadd7c3e2c6946afe78e9e_service-arrow-2.svg"
                                                     loading="lazy" alt="service-arrow-2" class="service-arrow-02" />
                                             </div>
-                                            <img src="./asset/image/ERP-solution.jpg"
-                                                loading="lazy" data-w-id="98d8c1a7-0b4d-dbb3-2afd-093321fe94b0" alt=""
+                                            <img src="./asset/image/ERP-solution.jpg" loading="lazy"
+                                                data-w-id="98d8c1a7-0b4d-dbb3-2afd-093321fe94b0" alt=""
                                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
                                                 srcset="./asset/image/ERP-solution.jpg 500w, ./asset/image/ERP-solution.jpg 1284w"
                                                 class="service-img" />
@@ -801,7 +711,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="service-collection w-dyn-list">
                             <div role="list" class="service-collection-list w-dyn-items">
                                 <div role="listitem" class="service-collection-item w-dyn-item">
@@ -844,14 +754,16 @@
                                                 <h4 class="service-title">Cloud Solutions</h4>
                                             </div>
                                             <div class="service-collection-item-right">
-                                                <p class="service-exar">Our cloud solutions offer scalable, secure, and flexible infrastructure to optimize performance and drive business growth.</p>
+                                                <p class="service-exar">Our cloud solutions offer scalable, secure, and
+                                                    flexible infrastructure to optimize performance and drive business
+                                                    growth.</p>
                                                 <img src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/68aabeeea3253698e35bbb82_service-arrow.svg"
                                                     loading="lazy" alt="service-arrow" class="service-arrow" />
                                                 <img src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/68aadd7c3e2c6946afe78e9e_service-arrow-2.svg"
                                                     loading="lazy" alt="service-arrow-2" class="service-arrow-02" />
                                             </div>
-                                            <img src="./asset/image/cloud-solutuion.jpg"
-                                                loading="lazy" data-w-id="bc3e34db-8a7c-9ab1-4592-22fb8b7fef43" alt=""
+                                            <img src="./asset/image/cloud-solutuion.jpg" loading="lazy"
+                                                data-w-id="bc3e34db-8a7c-9ab1-4592-22fb8b7fef43" alt=""
                                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
                                                 srcset="./asset/image/cloud-solutuion.jpg 500w, ./asset/image/cloud-solutuion.jpg 1284w"
                                                 class="service-img" />
@@ -874,14 +786,16 @@
                                                 <h4 class="service-title">Gaming Applications</h4>
                                             </div>
                                             <div class="service-collection-item-right">
-                                                <p class="service-exar">We create high-performance gaming apps that offer smooth, immersive experiences on all platforms and devices.</p>
+                                                <p class="service-exar">We create high-performance gaming apps that
+                                                    offer smooth, immersive experiences on all platforms and devices.
+                                                </p>
                                                 <img src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/68aabeeea3253698e35bbb82_service-arrow.svg"
                                                     loading="lazy" alt="service-arrow" class="service-arrow" />
                                                 <img src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/68aadd7c3e2c6946afe78e9e_service-arrow-2.svg"
                                                     loading="lazy" alt="service-arrow-2" class="service-arrow-02" />
                                             </div>
-                                            <img src="./asset/image/gaming-app.jpg" style="z-index: 100;"
-                                                loading="lazy" data-w-id="bc3e34db-8a7c-9ab1-4592-22fb8b7fef43" alt=""
+                                            <img src="./asset/image/gaming-app.jpg" style="z-index: 100;" loading="lazy"
+                                                data-w-id="bc3e34db-8a7c-9ab1-4592-22fb8b7fef43" alt=""
                                                 sizes="(max-width: 767px) 100vw, (max-width: 991px) 726.625px, 939.15625px"
                                                 srcset="./asset/image/gaming-app.jpg 500w, ./asset/image/gaming-app.jpg 1284w"
                                                 class="service-img" />
@@ -904,7 +818,9 @@
                                                 <h4 class="service-title">IT Consulting</h4>
                                             </div>
                                             <div class="service-collection-item-right">
-                                                <p class="service-exar">Our IT consulting services offer expert advice to optimize technology, enhance operations, and drive business success.</p>
+                                                <p class="service-exar">Our IT consulting services offer expert advice
+                                                    to optimize technology, enhance operations, and drive business
+                                                    success.</p>
                                                 <img src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/68aabeeea3253698e35bbb82_service-arrow.svg"
                                                     loading="lazy" alt="service-arrow" class="service-arrow" />
                                                 <img src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/68aadd7c3e2c6946afe78e9e_service-arrow-2.svg"
@@ -941,7 +857,7 @@
                                     class="subtitle _04">
                                     Experience the Power of Tailored <span class="_02">IT Solutions</span>
                                 </h4>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -965,7 +881,8 @@
                                                 </div>
                                                 <div class="portfolio-exar-wrap">
                                                     <p class="portfolio-exar">
-                                                       Custom applications designed to elevate your business performance.
+                                                        Custom applications designed to elevate your business
+                                                        performance.
                                                     </p>
                                                 </div>
                                             </div>
@@ -973,7 +890,7 @@
                                         <img src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/68a2c3f5cb721ef5a91c9e17_portfolio-shap.avif"
                                             loading="lazy" alt="portfolio-shap" class="portfolio-shap" />
                                     </div>
-                                    
+
                                     <div class="teaser-copy-wrap">
                                         <!-- <div class="teaser-img-tablet-down">
                                             <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.984375px, 939.984375px"
@@ -989,7 +906,8 @@
                                                     <h5 class="zenith">Cloud Solutions</h5>
                                                 </div>
                                                 <div class="portfolio-exar-wrap">
-                                                    <p class="portfolio-exar">Empower your business with scalable and secure cloud infrastructure.</p>
+                                                    <p class="portfolio-exar">Empower your business with scalable and
+                                                        secure cloud infrastructure.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1042,11 +960,16 @@
                                             alt="Mask group"
                                             src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/689dd79d8d551bd51e750fee_2ab004c02f0639307dd87de160efa6ee_Mask%20group.avif"
                                             loading="lazy" class="teaser-img _1" />
-                                        <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.984375px, 939.984375px"
+                                        <!-- <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.984375px, 939.984375px"
                                             srcset="./asset/image/cloud_1.jpg 500w, ./asset/image/cloud_1.jpg 800w, ./asset/image/cloud_1.jpg 2112w"
                                             alt="Frame 1430106012"
                                             src="./asset/image/cloud_1.jpg"
-                                            loading="lazy" class="teaser-img _2" />
+                                            loading="lazy" class="teaser-img _2" /> -->
+                                        <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.984375px, 939.984375px"
+                                            srcset="./asset/image/cloud_1.jpg 500w, ./asset/image/cloud_1.jpg 800w, ./asset/image/cloud_1.jpg 2112w"
+                                            alt="Frame 1430106012" src="./asset/image/cloud_1.jpg" loading="lazy"
+                                            class="teaser-img _2" />
+
                                         <!-- <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.984375px, 939.984375px"
                                             srcset="https://cdn.prod.website-files.com/6878854b4782d46450f79836/689dd7da81b9cb04c247831c_6dca888eacf982fa4d79fd76e2aa0a56_Frame%201430106013-p-500.avif 500w, https://cdn.prod.website-files.com/6878854b4782d46450f79836/689dd7da81b9cb04c247831c_6dca888eacf982fa4d79fd76e2aa0a56_Frame%201430106013-p-800.avif 800w, https://cdn.prod.website-files.com/6878854b4782d46450f79836/689dd7da81b9cb04c247831c_6dca888eacf982fa4d79fd76e2aa0a56_Frame%201430106013.avif 2112w"
                                             alt="Frame 1430106013"
@@ -1066,6 +989,7 @@
                     loading="lazy" alt="portfolio-shap" class="portfolio-shap _06" />
             </div>
         </section>
+
         <section class="choose-section">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="choose-box">
@@ -1241,7 +1165,8 @@
                 </div>
             </div>
         </section>
-        <section data-w-id="68559080-73fa-0446-46eb-393e8354ab9d" class="testimonials-section">
+
+        <!-- <section data-w-id="68559080-73fa-0446-46eb-393e8354ab9d" class="testimonials-section">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="testimonials-box">
                     <div class="testimonials-wrap">
@@ -1451,7 +1376,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
         <section id="Project" data-w-id="1be0257c-4419-bfbd-bfce-049aa5843477" class="project-section">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="project-wrap">
@@ -1469,7 +1395,7 @@
                                 through beautiful, strategic design.Book a free discovery call</p>
                             <div data-w-id="4fc921ea-3e52-fa1d-e851-184a9e2602ce" style="opacity:0" class="project-btn">
                                 <div class="btn">
-                                    <a href="/contact" data-w-id="31f89dd4-ce9f-b322-17f3-4316c92d73e0"
+                                    <a href="./contact" data-w-id="31f89dd4-ce9f-b322-17f3-4316c92d73e0"
                                         class="button-one w-inline-block">
                                         <div class="button_text_two">Book a free call now</div>
                                         <img loading="lazy"
@@ -1501,7 +1427,8 @@
                 </div>
             </div>
         </section>
-        <section class="pricing-section">
+
+        <!-- <section class="pricing-section">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="pricing-wrap">
                     <div class="section-title-wrap">
@@ -1639,8 +1566,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="insights-section">
+        </section> -->
+
+        <!-- <section class="insights-section">
             <div class="w-layout-blockcontainer container w-container">
                 <div class="insights-row">
                     <div class="section-title-wrap">
@@ -1708,7 +1636,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
         <section id="Contact" class="footer">
             <div class="footer-wrap">
                 <div class="footer-box">
@@ -1721,17 +1650,17 @@
                                     touch!</h3>
                             </div>
                             <div class="link-wrap">
-                                <a data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc6b" href="tel:+442079460958"
+                                <a data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc6b" href="tel:+917736960069"
                                     class="call-link w-inline-block">
                                     <img src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/688b562e505fecedaf5b67f3_call.svg"
                                         loading="lazy" alt="call" />
-                                    <p class="number">+44 20 7946 0958</p>
+                                    <p class="number">+91 7736960069</p>
                                 </a>
-                                <a data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc6f" href="mailto:contact@nexostudio.com"
-                                    class="call-link w-inline-block">
+                                <a data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc6f"
+                                    href="mailto:info@nxltechnologies.com" class="call-link w-inline-block">
                                     <img src="https://cdn.prod.website-files.com/6878854b4782d46450f79836/688b5872f93a536baed4c6d7_email.svg"
                                         loading="lazy" alt="email" />
-                                    <p class="number">contact@nexostudio.com</p>
+                                    <p class="number">info@nxltechnologies.com</p>
                                 </a>
                             </div>
                         </div>
@@ -1771,8 +1700,15 @@
                     <div class="footer-container">
                         <div class="footer-item _03">
                             <div class="wrap">
-                                <p data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc84" class="footer-exar">375 Greenfield
-                                    Avenue, New York, NY 12134, United States</p>
+                                <p data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc84" class="footer-exar">
+                                    #809, 8th floor, Gera Imperium, Patto, Panjim, Goa 403001,
+                                </p>
+                                <p data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc84" class="footer-exar">
+                                    4A, Bagheeratha Square, kacheripadi, Kochi,
+                                </p>
+                                <p data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc84" class="footer-exar">
+                                    938 key avenues, San Francisco, CA 94124,
+                                </p>
                                 <div data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc86" class="social-icon-wrap">
                                     <a data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc87"
                                         href="https://www.facebook.com/login.php/" target="_blank"
@@ -1818,11 +1754,11 @@
                                     <span class="nexo">NXL&#8211;Technologies</span>
                                     © 2025
                                 </p>
-                                <div data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc98" class="footer-link-wrap">
+                                <!-- <div data-w-id="f48f2c1b-b707-bf58-230b-80a78bccbc98" class="footer-link-wrap">
                                     <a href="/admin-page/styleguide" class="footer-link-02">Styleguide</a>
                                     <a href="/admin-page/licenses" class="footer-link-02">Licenses</a>
                                     <a href="/admin-page/change-log" class="footer-link-02">Change Log</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="footer-item-left _03">

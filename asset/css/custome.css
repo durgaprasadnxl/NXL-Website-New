@@ -78,6 +78,44 @@
   z-index: 9999;
 }
 
+.see-more {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.see-more:hover {
+  color: #007bff;
+}
+
+.see-more span {
+  transition: transform 0.3s ease;
+}
+
+.see-more:hover span {
+  transform: translateX(4px);
+}
+
+/* Line effect if using option 5 */
+.see-more .line {
+  width: 0;
+  height: 1px;
+  background: #007bff;
+  display: inline-block;
+  transition: width 0.3s ease;
+}
+
+.see-more:hover .line {
+  width: 20px;
+}
+
+
 /* Popup Box */
 .popup-box {
   background: #fff;
@@ -86,6 +124,7 @@
   text-align: center;
   width: 90%;
   max-width: 400px;
+  z-index: 999;
 }
 
 .popup-btn {
@@ -98,6 +137,98 @@
   cursor: pointer;
 }
 
+.ticket-wrapped {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.ticket-wrapped {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.client-wrapped {
+  display: flex;
+  width: max-content;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  animation: scroll-left 30s linear infinite;
+}
+
+.client-logo {
+  height: 70px;
+  width: auto;
+  margin: 0 40px;
+  object-fit: contain;
+}
+
+/* Infinite Scroll Animation */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .client-logo {
+    height: 60px;
+    margin: 0 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .client-logo {
+    height: 45px;
+    margin: 0 20px;
+  }
+}
+
+
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Tablet layout */
+@media (min-width: 768px) {
+  .footer-address {
+    font-size: 17px;
+    gap: 10px;
+  }
+  .address{
+    text-align: center;
+  }
+}
+
+/* Desktop/Web layout */
+@media (min-width: 1024px) {
+  .footer-address {
+    font-size: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .address {
+    width: 48%;
+    text-align: center;
+  }
+}
 
 /* Keyframes for infinite scroll */
 @keyframes scroll-left {

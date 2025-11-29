@@ -2843,7 +2843,7 @@ img {
 
 .global-menu {
     z-index: 1;
-    background-color: var(--theme-color);
+    background-color: #aaaaaa;
     opacity: 1;
     justify-content: center;
     align-items: center;
@@ -2900,7 +2900,7 @@ img {
 }
 
 .global-menu__item {
-    color: var(--white);
+    color: #000;
     margin-top: .25em;
     margin-bottom: .25em;
     font-size: 40px;
@@ -2910,7 +2910,7 @@ img {
 }
 
 .global-menu__item:hover {
-    color: var(--white)
+    color: #0000005c;
 }
 
 .pulsing-wrap {

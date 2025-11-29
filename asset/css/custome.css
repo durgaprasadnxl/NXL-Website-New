@@ -192,6 +192,9 @@
     height: 45px;
     margin: 0 20px;
   }
+  .choose-item-text{
+    font-size: 1.6rem !important;
+  }
 }
 
 
